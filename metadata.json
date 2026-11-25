@@ -1,0 +1,8 @@
+{
+  "name": "QASIDA — Luxury Abaya & Modest Couture",
+  "description": "A luxury abaya, burqa, and modest couture e-commerce atelier at Dhaka House Building, Uttara, Dhaka, Bangladesh featuring curated collections, dynamic filtering, bespoke product galleries, and full cart and checkout workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

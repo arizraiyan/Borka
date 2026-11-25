@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-canvas: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-cream: #EDE6DC;
+  --color-ink: #242424;
+  --color-muted: #777777;
+  --color-hairline: #EAEAEA;
+  --color-bronze: #A88C70;
+}
+
+@layer base {
+  html,
+  body {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #242424;
+    background-color: #FFFFFF;
+    overflow-x: clip;
+    max-width: 100%;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeSlideUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-fade-up {
+    animation: none;
+  }
+}
